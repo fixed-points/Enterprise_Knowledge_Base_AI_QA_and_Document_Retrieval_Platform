@@ -1,0 +1,1 @@
+powershell -ExecutionPolicy Bypass -File D:\qiye_zhishiku\scripts\start-all.ps1

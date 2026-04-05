@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: knowledgebase-backend
+  profiles:
+    active: dev
+  mandatory-file-encoding: UTF-8
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8
+
+app:
+  storage:
+    path: ${user.dir}/storage
+
+ai:
+  service:
+    base-url: http://localhost:8000
